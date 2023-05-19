@@ -1,0 +1,158 @@
+/*couleur*/
+:root {
+   --blanche: #ffffff;
+   --lavande: #3D2DA6;
+   --bleu: #07338C;
+   --bleu-nuit: #021740;
+   --rose-clair: #F2CEF2;
+   --violet: #9E91B7;
+   --rose: #DF99F2; 
+
+}
+/*police*/
+@font-face{
+    font-family: Panthera;
+    src: url(../font/PantheraRegular-MVZ9J.ttf);
+}
+@font-face{
+    font-family: WakandaForever;
+    src: url(../font/WakandaForever-Regular.ttf);
+}
+@font-face{
+    font-family: BEYNO;
+    src: url(../font/BEYNO/BEYNO.ttf);
+}
+@font-face{
+    font-family: Cantarell;
+    src: url(../font/Cantarell-Regular.ttf);
+}
+h1{
+    font-family:'Panthera';
+    font-size: 68px;
+}
+
+h1, h2, h3{
+    color: var(--violet)
+}
+h2{
+    font-family: 'BEYNO';
+    font-size: 32px ;
+}
+h3{
+    font-family: 'BEYNO';
+    font-size: 32px;
+    
+}
+.texte{
+    color: var(--blanche);
+    font-family: 'Cantarell';
+    font-size: 16px;
+}
+body{
+margin: 0;
+padding: 0;
+background-image: url(../Illustration/Allpages/arrière_plan.png);
+background-size: cover;
+
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 10px;
+}
+.logo-nav{
+    margin-left: 50px;
+}
+/*Bar de navigation*/
+.nav-bar{
+    display: flex;
+     justify-content: space-between;
+     width: 30% ;
+     color: var(--blanche);
+     font-family: 'BEYNO';
+    margin-right: 100px;
+ }
+ /*effet bar de navigation*/
+ .nav-bar a{
+    text-decoration: none;
+    color: var(--blanche);   
+}
+.nav-bar :hover{
+   text-decoration: underline;
+   color: var(--blanche);
+     
+}
+.nav-bar :active{
+   text-decoration: underline;
+   color: #9E91B7;
+   font-weight: 300;
+   font-size: 1.2rem;
+   
+}
+
+}
+.resume{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.resume2{
+    width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  right: 0;
+}
+.killmonger-okoye{
+    width: 90%;
+  height: 345px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color:var(--bleu-nuit)
+}
+.resumetxt{
+    padding: 20px;
+}
+.histoire{
+   
+    display: flex;
+    padding: 0 100px 100px 100px;
+}
+.column1{
+    padding: 25px 200px 0 200px;
+    text-align: justify;
+}
+.img-tchalla{
+margin-top: 0px;
+position: absolute;
+justify-self: center;
+align-self: center;
+
+}
+.column2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column2 .bio{
+    background-color: var(--blanche);
+    width: 450px;
+    height: auto;
+    position: relative;
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    margin-top: 300px;
+    border-radius: 10px;
+}

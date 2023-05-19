@@ -1,0 +1,80 @@
+/*couleur*/
+:root {
+    --blanche: #ffffff;
+    --lavande: #3D2DA6;
+    --bleu: #07338C;
+    --bleu-nuit: #021740;
+    --rose-clair: #F2CEF2;
+    --violet: #9E91B7;
+    --rose: #DF99F2; 
+ 
+ }
+ /*police*/
+ @font-face{
+     font-family: Panthera;
+     src: url(../font/PantheraRegular-MVZ9J.ttf);
+ }
+ @font-face{
+     font-family: WakandaForever;
+     src: url(../font/WakandaForever-Regular.ttf);
+ }
+ @font-face{
+     font-family: BEYNO;
+     src: url(../font/BEYNO/BEYNO.ttf);
+ }
+ @font-face{
+     font-family: Cantarell;
+     src: url(../font/Cantarell-Regular.ttf);
+ }
+ /*police de caractère*/
+ .citation{
+     font-family: 'WakandaForever';
+     font-size: 43px;
+     color: var(--violet);
+ }
+ .txt{
+     font-family: 'Cantarell';
+    font-size: 14px;
+    color: var(--blanche);
+}
+h2{
+    font-family: 'BEYNO';
+    font-size: 32px;
+    color: var(--violet);
+}
+ /*arrière-plan*/
+ body{
+     background: url(../Illustration/Allpages/arrière_plan.png);
+ }
+ /*header*/
+ .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 10px;
+ }
+ .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 30% ;
+    color: var(--blanche);
+    font-family: 'BEYNO';
+   margin-right: 100px;
+ }
+ /*effe bar de navigation*/
+ .nav-bar a{
+     text-decoration: none;
+     color: var(--blanche);   
+ }
+ .nav-bar :hover{
+    text-decoration: underline;
+    color: var(--blanche);
+      
+ }
+ .nav-bar :active{
+    text-decoration: underline;
+    color: #9E91B7;
+    font-weight: 300;
+    font-size: 1.2rem;
+    
+ }
