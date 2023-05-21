@@ -45,36 +45,52 @@ h2{
  /*arrière-plan*/
  body{
      background: url(../Illustration/Allpages/arrière_plan.png);
+     width: 100%;
  }
- /*header*/
- .navigation{
+ /*Bar de navigation*/
+.navigation{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 10px;
- }
- .nav-bar{
+    padding: 15px 15px;
+}
+.logo-nav{
+    margin-left: 25px;
+}
+/*Bar de navigation*/
+.nav-bar{
     display: flex;
-    justify-content: space-between;
-    width: 30% ;
-    color: var(--blanche);
-    font-family: 'BEYNO';
-   margin-right: 100px;
+     justify-content: space-between;
+     width: 20% ;
+     color: var(--blanche);
+     font-family: 'BEYNO';
+    margin-right: 100px;
  }
- /*effe bar de navigation*/
+ /*effet bar de navigation*/
  .nav-bar a{
-     text-decoration: none;
-     color: var(--blanche);   
+    text-decoration: none;
+    color: var(--blanche);   
+}
+.nav-bar :hover{
+   text-decoration: underline;
+   color: var(--blanche);
+     
+}
+.nav-bar :active{
+   text-decoration: underline;
+   color: #9E91B7;
+   font-weight: 300;
+   font-size: 1.2rem;
+   
+}
  }
- .nav-bar :hover{
-    text-decoration: underline;
-    color: var(--blanche);
-      
+ /*contenu*/
+ .content1{
+display: flex;
  }
- .nav-bar :active{
-    text-decoration: underline;
-    color: #9E91B7;
-    font-weight: 300;
-    font-size: 1.2rem;
-    
- }
+.content-defi{
+    padding-top: 200px;
+}
+.texte{
+    position: relative;
+}
