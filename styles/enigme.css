@@ -1,53 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /*couleur*/
 :root {
-    --blanche: #ffffff;
-    --lavande: #3D2DA6;
-    --bleu: #07338C;
-    --bleu-nuit: #021740;
-    --rose-clair: #F2CEF2;
-    --violet: #9E91B7;
-    --rose: #DF99F2; 
- 
- }
- /*police*/
- @font-face{
-     font-family: Panthera;
-     src: url(../font/PantheraRegular-MVZ9J.ttf);
- }
- @font-face{
-     font-family: WakandaForever;
-     src: url(../font/WakandaForever-Regular.ttf);
- }
- @font-face{
-     font-family: BEYNO;
-     src: url(../font/BEYNO/BEYNO.ttf);
- }
- @font-face{
-     font-family: Cantarell;
-     src: url(../font/Cantarell-Regular.ttf);
- }
- /*police de caractère*/
- .citation{
-     font-family: 'WakandaForever';
-     font-size: 43px;
-     color: var(--violet);
- }
- .txt{
-     font-family: 'Cantarell';
-    font-size: 14px;
-    color: var(--blanche);
+   --blanche: #ffffff;
+   --lavande: #3D2DA6;
+   --bleu: #07338C;
+   --bleu-nuit: #021740;
+   --rose-clair: #F2CEF2;
+   --violet: #9E91B7;
+   --rose: #DF99F2; 
+
+}
+/*police*/
+@font-face{
+    font-family: Panthera;
+    src: url(../font/PantheraRegular-MVZ9J.ttf);
+}
+@font-face{
+    font-family: WakandaForever;
+    src: url(../font/WakandaForever-Regular.ttf);
+}
+@font-face{
+    font-family: BEYNO;
+    src: url(../font/BEYNO/BEYNO.ttf);
+}
+@font-face{
+    font-family: Cantarell;
+    src: url(../font/Cantarell-Regular.ttf);
+}
+h1{
+    font-family:'Panthera';
+    font-size: 68px;
+}
+
+h1, h2, h3{
+    color: var(--violet)
 }
 h2{
     font-family: 'BEYNO';
-    font-size: 32px;
-    color: var(--violet);
+    font-size: 42px ;
 }
- /*arrière-plan*/
- body{
-     background: url(../Illustration/Allpages/arrière_plan.png);
-     width: 100%;
- }
- /*Bar de navigation*/
+h3{
+    font-family: 'BEYNO';
+    font-size: 32px;
+    
+}
+.texte{
+    color: var(--blanche);
+    font-family: 'Cantarell';
+    font-size: 14px;
+    
+}
+.texte-enigme{
+    font-family: 'WakandaForever';
+    font-size: 43px;
+    color: var(--violet);
+
+}
+body{
+margin: 0;
+padding: 0;
+background-image: url(../Illustration/Allpages/arrière_plan.png);
+background-size: cover;
+
+}
+/*Bar de navigation*/
 .navigation{
     display: flex;
     align-items: center;
@@ -83,14 +102,126 @@ h2{
    font-size: 1.2rem;
    
 }
- }
- /*contenu*/
+ /*contenu*/ 
+ /*image + description Dora Milaje*/
  .content1{
 display: flex;
+border: 4px solid #5cd158;
+
+ }
+ .img{
+     max-width: 70%;
+     max-height: 70%;
+     height: auto;
  }
 .content-defi{
-    padding-top: 200px;
+
+    border: 3px solid #6c8ea5;
+    margin-left: -15%;
+    padding-top: 20%;
+}
+.titre{
+    margin-left: 5%;
 }
 .texte{
     position: relative;
+    border: 3px solid #9fec3a;
+    width: 60%;
+    padding: 7px;
+    margin-top: 20%;
+}
+ .txt1{
+    position: relative;
+    border: 3px solid #9fec3a;
+    text-align: justify;
+    font-size: 14px;
+    color: var(--blanche);
+    padding: 7px;
+    font-family: 'Cantarell';
+    width: 60%;
+    margin-top: -42%;
+    margin-left: 17%;
+}
+.cadre1{
+    position: absolute;
+    width: 784px;
+    height: 487px;
+    
+}
+.ligne{
+    position: relative;
+    padding-top: 400px;
+}
+/*contenu 2 ENIGME */
+.content2{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content2 .content-transcript{
+    margin-top: 7%;
+}
+/*Transcription de l'enigme*/
+.transcription{
+width: 46%;
+padding: 7px;
+}
+.txt2{
+    font-family: 'Cantarell';
+    font-size: 16px;
+    color: var(--blanche);
+}
+.txt2 span{
+    font-family: 'WakandaForever';
+    
+}
+.zone-reponse{
+    width: 46%;
+    margin-top: 10%;
+}
+input{
+    
+
+    margin-inline: auto;
+    width: 75%;
+    height: 30%;
+    margin-top: 10px;
+    padding: 10px 10px 10px 20px;
+    background: transparent;
+    border: var(--rose-clair) 1px solid;
+    border-radius: 38px;
+    color: var(--rose-clair);
+    outline-color: #F2CEF2;
+    font-family: 'Cantarell';
+    font-size: 16px;
+}
+.content-droite{
+    display: flex;
+    width: 784px;
+   height: 487px;
+   margin-top: -35%;
+   margin-left: 50%;
+}
+.cadre2{
+   
+   position: absolute;
+   width: 784px;
+   height: 487px;
+   
+}
+.txt4{
+    border: 3px solid #eaf3e8;
+    color: var(--blanche);
+    text-align: justify;
+    font-size: 14px;
+    color: var(--blanche);
+    padding: 7px;
+    font-family: 'Cantarell';
+    width: 60%;
+    position: relative;
+    margin-top: -40%;
+    margin-left: 17%;
+}
+
+.txt4 span{
+    padding-left: 40%;
 }
