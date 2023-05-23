@@ -32,7 +32,7 @@
 }
 h1{
     font-family:'Panthera';
-    font-size: 68px;
+    font-size: 60px;
 }
 
 h1, h2, h3{
@@ -44,22 +44,32 @@ h2{
 }
 h3{
     font-family: 'BEYNO';
-    font-size: 32px;
+    font-size: 28px;
     
 }
 .texte{
     color: var(--blanche);
     font-family: 'Cantarell';
-    font-size: 16px;
-    
+    font-size: 12px;
+    padding-top: 10px;  
+    padding-bottom: 10px;
 }
+.voirplus{
+    text-decoration: underline;
+    color: var(--blanche);
+    font-family: 'Cantarell';
+    font-size: 13px;
+}
+/*Fin Police*/
+/*Reglage Background Image*/
 body{
 margin: 0;
 padding: 0;
 background-image: url(../Illustration/Allpages/arrière_plan.png);
 background-size: cover;
-
 }
+
+/*Début de la contenu*/
 /*Bar de navigation*/
 .navigation{
     display: flex;
@@ -70,6 +80,9 @@ background-size: cover;
 .logo-nav{
     margin-left: 25px;
 }
+.logo-nav img:hover{
+ color: var(--lavande);
+}
 /*Bar de navigation*/
 .nav-bar{
     display: flex;
@@ -79,7 +92,13 @@ background-size: cover;
      font-family: 'BEYNO';
     margin-right: 100px;
  }
+ 
+ 
  /*effet bar de navigation*/
+ .nav-bar .active{
+    color: var(--violet);
+    text-decoration: underline;
+}
  .nav-bar a{
     text-decoration: none;
     color: var(--blanche);   
@@ -96,7 +115,42 @@ background-size: cover;
    font-size: 1.2rem;
    
 }
+header{
+    margin-left: 10%;
+}
+/*Reseau sociaux à gauche*/
+.logo-left{
+    position: fixed;
+    margin-top: -5%;
+    writing-mode: vertical-lr;
+    margin-left: 10px;
+    height: 350px;
+}
+.ligne{
+    color: var(--violet);
+    border: 2px solid var(--violet);
+}
+.icon-gauche{
+    margin-top: 60%;
+    margin-left: 2px;
+}
+.icon-gauche img{
+    width: 20px;
+    margin-top: 10px;
+}
+.icon-gauche img:hover{
+
+}
+.ligne2{
+color: var(--violet);
+border: 2px solid var(--violet);
+margin-left: 7px ;
+margin-top: -250px;
+margin-bottom: 100%;
+margin-left: 20px;
+}
 /*contenu*/
+/*Section introduction du film*/
 .resume{
    background-image: url(../Illustration/Accueil/Pantherhome1..png);
    background-position: top right;
@@ -104,40 +158,55 @@ background-size: cover;
    background-repeat: no-repeat;
    height: 450px;
    margin-bottom: 10%;
-  
     
 }
 .black-resume{ 
     display: flex;
-    border: 3px solid #9E91B7;
     width: 50%;
 }
 .black-resume .texte1{
-    border: 3px solid rgb(214, 57, 180);
     padding-top: 13%;
     margin-left: 20%;
     padding-bottom: 13%;
-
+/*Section slider image personnages*/
 }
 .resume2{
-    width: 110%;
-  display: flex;
-  border: 3px solid rgb(195, 170, 202);
-background-color: var(--bleu-nuit);
-margin-left: 10%;
-height: 345px;
+    width: 90%;
+    display: flex;
+    background-color: var(--bleu-nuit);
+    margin-left: 7%;
+    height: 250px;
 }
 .killmonger-img{
     position: relative;
-    
     align-items: center;
-    margin-top: -60px;
+    margin-top: -50px;
     margin-left: 35px;
+    width: auto;
+    height: 150%;
+}
+.killmonger-img img{
+    width: auto;
+    height: 90%;
+}
+.okoye-img{
+    width: auto;
+    height: 100%;
+}
+.okoye-img img{
+    width: auto;
+    height: 100%;
+}
+.okoye-img2 img{
+    width: auto;
+    height: 100%;
 }
 
 .resumetxt{
-    margin: 20px;
+    padding-top: 15px;
+    margin-left: 20px;
 }
+/*Section histoire*/
 .histoire{
     margin-top: 10%;
     display: flex;
@@ -146,8 +215,9 @@ height: 345px;
 .column1{
     padding: 25px 90px 0 90px;
     text-align: justify;
-    border: 3px solid rgb(204, 21, 134);
 }
+
+/* Section profil de Tchalla à droite */
 .img-tchalla{
     position: relative;
     left: 15%;
@@ -155,7 +225,12 @@ height: 345px;
     margin-inline: auto; 
     justify-self: center;
     align-self: center;
-
+    width: 60%;
+    margin-left: 5%;
+}
+.img-tchalla img{
+    width: 100%
+ 
 }
 .column2{
     width: 40%;
@@ -166,11 +241,10 @@ height: 345px;
     flex-direction: column;
     justify-content: space-between;
     padding: 25px ;
-    
+  
 }
 .column2 .bio{
     background-color: var(--blanche);
-    width: 450px;
     height: auto;
     padding-top: 250px;
     padding-left: 50px;
@@ -181,21 +255,35 @@ height: 345px;
     position: relative;
     justify-content: initial;
 }
-.profile{
-    border: 3px solid rgb(153, 242, 227);
-   
-}
 .bio p{
     font-family: 'Cantarell';
-    font-size: 16px;
+    font-size: 13px;
+    color: var(--bleu-nuit);
+    padding-top: 15px;
 }
+.bio .name{
+    text-align: center;
+    padding: 7px;
+    font-size: 20px;
+}
+.statut li{
+    border: 2px solid var(--lavande);
+    font-family: 'Cantarell';
+    display: inline-flex;
+    
+    height: 32px;
+    margin-left: 5px;
+    text-align: center;
+    padding: 5px;
+    color: var(--blanche);
+    border-radius: 5px;
+    background-color: var(--lavande);
+}
+/*image en bas du box profil*/
 .ill-ronde{
-    border: 3px solid #F2CEF2;
     margin-top: 150px;
 }
-.content1 .content2 .content3{
-    border: 3px solid #ffffff;
-}
+
 /*formulaire de contact*/
 #contact{
     position: relative;
@@ -289,29 +377,89 @@ textarea{
 footer{
     background: url(../Illustration/Allpages/back_footer.png);
     margin: 0;
-    background-repeat: no-repeat;
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
     
 }
 .rowprimary{
-
     display: grid;
     width: 100%;
+    padding: 15%;
 }
 .column-img{
-    border: 3px solid #e29e9e;
+    width: 25%;
+    height: 65%;
+    margin-top: 5%;
+    margin-left: 5% ;
+    margin-bottom: 10%;
 
 }
-.column-img .footer1{
-width: 200px;
+.column-img .footer1 img{
+width: 70%;
+
 }
 .column-img .footer2{
-    width: 100px;
-    position: relative;
+    width: 100%;
+    margin-bottom: 20%;
+    margin-top: -50%;
+    margin-left: 15%;
+   
 }
 .column-page-icons{
-    border: 3px solid #c7be71;
+
     width: 600px;
 }
-.icons{
-    border: 3px solid #ffffff;
+
+.page{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+     padding: 7px;
+     margin-left: 40%;
+     margin-top: -25%;
+    
+}
+.page p{
+    font-size: 16px;
+    color: var(--blanche);
+    font-family: 'Cantarell';
+    
+}
+.page a{
+    text-decoration: none;
+    color: var(--blanche);
+    font-size: 14px;
+    font-family: 'Cantarell';
+}
+.page a:hover{
+    text-decoration: none;
+    color: var(--blanche);
+}
+.confident{
+    font-family: 'Cantarell';
+    font-size: 10px;
+    color: var(--blanche);
+    margin-left: 40%;
+    margin-bottom: 10%;
+    margin-top: -10%;
+    padding-left: 7px;
+}
+.icons-footer img{
+    width: wrap;
+    max-width: 20rem;
+}
+.icons-footer img:hover{
+    width: wrap;
+    transform: scale(1.6);
+    transition: all .5s ease;
+    transform: rotate(20%);
+}
+.column-img :hover{
+    transform: scale(100%);
+    transition: all 0.5s ease;
+}
+.link-footer a:hover{
+    text-decoration: underline;
+    color: var(--blanche);
 }
